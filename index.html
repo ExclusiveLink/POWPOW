@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iced Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ice.css">
+</head>
+<body>
+
+<div class="bar">Free shipping on orders over $100</div>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <ul>
+      <li><a href="#new">New</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="brand" href="#top">Iced Out</a>
+    <div class="right">
+      <a href="#contact">Log in</a>
+      <a href="#shop" aria-label="Cart">Cart (<span id="count">0</span>)</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO: to use your own photo, add src="your-photo.jpg" to the <img> below -->
+  <div class="hero">
+    <img src="Image/Iced Cuban Bracelet and Three Rings.png" class="bg" alt="" data-ph="hero">
+    <div>
+      <h1>Iced Out</h1>
+      <p>Everyday pieces with a cold finish.</p>
+      <a class="btn" href="#shop">Shop now</a>
+    </div>
+  </div>
+
+  <section id="new">
+    <h2>Shop our collections</h2>
+    <div class="collections">
+      <a class="tile" href="#shop"><div class="ph"><img src="Image/Cinematic Black Stone Ring on Textured Fabric.png" alt="Collection one" data-ph="1"></div><span>New arrivals</span></a>
+      <a class="tile" href="#shop"><div class="ph"><img src="Image/icemage.jpeg" alt="Collection two" data-ph="2"></div><span>All products</span></a>
+      <a class="tile" href="#shop"><div class="ph"><img src="Image/Dramatic Antique Skull Ring Close-Up.png" alt="Collection three" data-ph="3"></div><span>Best sellers</span></a>
+    </div>
+  </section>
+
+  <section id="shop" style="padding-top:0">
+    <h2>All products</h2>
+    <!-- To use a real product photo: add src="photo.jpg" to the <img>. Then edit the name and price. -->
+    <div class="grid">
+      <article class="card"><div class="ph"><img src="Image/Pavé Cuban Link Chain on Black Fabric.png" alt="Product 1" data-ph="p"></div><h3>Icy Link Chain</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/Cinematic Black Stone Ring on Textured Fabric.png" alt="Product 2" data-ph="p"></div><h3>Black Gemstone</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/Dramatic Antique Skull Ring Close-Up.png" alt="Product 3" data-ph="p"></div><h3>Skull Ring</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/Glossy Black Signet Ring on Dark Fabric.png" alt="Product 4" data-ph="p"></div><h3>Phantom Ring</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/Loyalty Ring in Shadow.png" alt="Product 5" data-ph="p"></div><h3>Revenge</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/Moody Silver Signet Ring on Black Fabric.png" alt="Product 6" data-ph="p"></div><h3>Ring of Sin</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/icemage.jpeg" alt="Product 7" data-ph="p"></div><h3>Product name</h3><p class="price">$199.00</p><button class="add">Add to cart</button></article>
+      <article class="card"><div class="ph"><img src="Image/icemage.jpeg" alt="Product 8" data-ph("price">$199.00</p><button class("add">Add to cart</button></article>
+    </div>
+  </section>
+
+  <section class="statement">
+    <h2>Stay cold</h2>
+    <p>Make your style more flashy.</p>
+  </section>
+
+  <section class="perks" aria-label="Store info">
+    <div><strong>Fast shipping</strong><span>Ships within 5 business days</span></div>
+    <div><strong>Free delivery</strong><span>On orders over $100</span></div>
+    <div><strong>Easy returns</strong><span>14 days from delivery</span></div>
+    <div><strong>Quality you can feel</strong><span>Made to last</span></div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="foot">
+    <div><div class="logo">Iced Out</div><p style="color:var(--muted);font-size:.9rem;margin:.4rem 0 0">Stay cold.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="#new">New</a></li><li><a href="#shop">All products</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="#contact">Contact</a></li><li><a href="#contact">Returns</a></li><li><a href="#contact">Shipping</a></li></ul></div>
+    <div><h4>Follow us</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="copy">© 2026 Iced Out By Fedel</div>
+</footer>
+
+<script>
+// Any <img> without a src gets a grey placeholder. Add src="yourfile.jpg" to replace it.
+(function(){
+  function svg(w,h,label){
+    var s='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'">'+
+      '<rect width="100%" height="100%" fill="#d9e2e8"/>'+
+      '<g fill="none" stroke="#8c9aa6" stroke-width="'+Math.round(w/150)+'" stroke-linejoin="round" stroke-linecap="round" transform="translate('+(w/2-w*0.09)+','+(h/2-w*0.09)+') scale('+(w*0.18/24)+')">'+
+      '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="1.6"/><path d="M21 15l-5-5L5 21"/></g>'+
+      '<text x="50%" y="'+(h/2+w*0.18)+'" text-anchor="middle" font-family="Arial,sans-serif" font-size="'+Math.round(w/22)+'" fill="#8c9aa6">'+label+'</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(s);
+  }
+  document.querySelectorAll('img[data-ph]').forEach(function(img){
+    if(img.getAttribute('src')) return;
+    var k=img.getAttribute('data-ph');
+    img.src = k==='hero' ? svg(1600,900,'Your hero image') : svg(600,800,'Your image here');
+    if(k==='hero') img.style.filter='brightness(.6)';
+  });
+  var n=0, c=document.getElementById('count');
+  document.querySelectorAll('.add').forEach(function(b){
+    b.addEventListener('click',function(){ n++; c.textContent=n; });
+  });
+})();
+</script>
+</body>
+</html>
